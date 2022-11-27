@@ -26,21 +26,3 @@ executor.start_polling(dp, skip_updates=True, on_startup=on_startup)   #start_po
                                                 #on_startup)
 
 
-# from aiogram import Bot, types   #класс экзэкьютор нужен чтобы бот вышел в онлайн
-# from aiogram.dispatcher import Dispatcher          #       
-# from aiogram.utils import executor     #э
-
-# import os
-
-# bot = Bot(token=os.getenv('TOKEN'))
-# dp = Dispatcher(bot)
-
-# async def on_startup(_):             #при запуске бота...
-#     print('Бот вышел в онлайн')     
-    
-
-# @dp.message_handler()
-# async def echo_send(message):
-#     await message.answer(message.text)
-
-# executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
